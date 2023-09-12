@@ -1,0 +1,4 @@
+INFO 2023-09-12 14:45:24,663 autoreload 17160 16532 Watching for file changes with StatReloader
+INFO 2023-09-12 14:47:27,668 autoreload 17160 16532 F:\my_study_projects\django_hw4\django_hw4\settings.py changed, reloading.
+INFO 2023-09-12 14:47:28,070 autoreload 12680 2692 Watching for file changes with StatReloader
+INFO 2023-09-12 14:51:12,463 autoreload 11876 536 Watching for file changes with StatReloader
