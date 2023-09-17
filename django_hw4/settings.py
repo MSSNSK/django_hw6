@@ -3,11 +3,16 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-6559ws%6b((91p778*)yowcbxa6-=r&l8sy19y#^7m&#3k07r3'
+# SECRET_KEY = 'django-insecure-6559ws%6b((91p778*)yowcbxa6-=r&l8sy19y#^7m&#3k07r3'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = True
+DEBUG = False
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'MSSNSK.pythonanywhere.com',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -49,14 +54,22 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'gb_django_hw.wsgi.application'
+WSGI_APPLICATION = 'django_hw4.wsgi.application'
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'MSSNSK$default',
+        'USER': 'MSSNSK',
+        'PASSWORD': os.getenv('MYSQL_PASSWORD'),
+        'HOST': 'MSSNSK.mysql.pythonanywhere-servises.com',
+        'OPTIONS': {
+            'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
+            'charset': 'utf8mb4',
+        }
     }
 }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -82,7 +95,9 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
-MEDIA_URL = 'media/'
+STATIC_ROOT = BASE_DIR / 'static/'
+
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

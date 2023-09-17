@@ -1,4 +1,23 @@
-INFO 2023-09-12 14:45:24,663 autoreload 17160 16532 Watching for file changes with StatReloader
-INFO 2023-09-12 14:47:27,668 autoreload 17160 16532 F:\my_study_projects\django_hw4\django_hw4\settings.py changed, reloading.
-INFO 2023-09-12 14:47:28,070 autoreload 12680 2692 Watching for file changes with StatReloader
-INFO 2023-09-12 14:51:12,463 autoreload 11876 536 Watching for file changes with StatReloader
+INFO 2023-09-12 15:01:51,989 autoreload 7592 6052 Watching for file changes with StatReloader
+INFO 2023-09-12 15:07:09,634 autoreload 18120 15736 Watching for file changes with StatReloader
+INFO 2023-09-12 15:07:12,163 basehttp 18120 18476 "GET / HTTP/1.1" 200 530
+WARNING 2023-09-12 15:07:12,221 log 18120 18476 Not Found: /favicon.ico
+WARNING 2023-09-12 15:07:12,222 basehttp 18120 18476 "GET /favicon.ico HTTP/1.1" 404 3957
+WARNING 2023-09-12 15:07:36,666 log 18120 18476 Not Found: /customer/5/
+WARNING 2023-09-12 15:07:36,666 basehttp 18120 18476 "GET /customer/5/ HTTP/1.1" 404 2851
+WARNING 2023-09-12 15:07:59,474 log 18120 18476 Not Found: /product_page
+WARNING 2023-09-12 15:07:59,475 basehttp 18120 18476 "GET /product_page HTTP/1.1" 404 3960
+INFO 2023-09-12 15:08:35,067 basehttp 18120 18476 "GET /product/1 HTTP/1.1" 301 0
+WARNING 2023-09-12 15:08:35,077 log 18120 15732 Not Found: /product/1/
+WARNING 2023-09-12 15:08:35,078 basehttp 18120 15732 "GET /product/1/ HTTP/1.1" 404 3715
+WARNING 2023-09-12 15:08:44,506 log 18120 15732 Not Found: /product/2/
+WARNING 2023-09-12 15:08:44,507 basehttp 18120 15732 "GET /product/2/ HTTP/1.1" 404 3715
+WARNING 2023-09-12 15:09:04,405 log 18120 15732 Not Found: /update_product/2/
+WARNING 2023-09-12 15:09:04,406 basehttp 18120 15732 "GET /update_product/2/ HTTP/1.1" 404 3942
+INFO 2023-09-12 15:09:23,602 basehttp 18120 15732 "GET /customer/2 HTTP/1.1" 301 0
+WARNING 2023-09-12 15:09:23,611 log 18120 3568 Not Found: /customer/2/
+WARNING 2023-09-12 15:09:23,612 basehttp 18120 3568 "GET /customer/2/ HTTP/1.1" 404 2851
+WARNING 2023-09-12 15:10:09,038 log 18120 7500 Not Found: /favicon.ico
+WARNING 2023-09-12 15:10:09,063 basehttp 18120 7500 "GET /favicon.ico HTTP/1.1" 404 3957
+WARNING 2023-09-12 15:12:33,141 log 18120 17900 Not Found: /favicon.ico
+WARNING 2023-09-12 15:12:33,147 basehttp 18120 17900 "GET /favicon.ico HTTP/1.1" 404 3957

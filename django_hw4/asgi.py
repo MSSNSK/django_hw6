@@ -1,5 +1,5 @@
 """
-ASGI config for gb_django_hw project.
+ASGI config for django_hw4 project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gb_django_hw.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_hw4.settings')
 
 application = get_asgi_application()
